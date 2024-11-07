@@ -1,4 +1,4 @@
-DirectoryIndex index.php index.html
+DirectoryIndex indexProyectoTema3.php index.html
 ErrorDocument 404 /204DAWProyectoDAW/error/404.html
 ErrorDocument 403 /204DAWProyectoDAWerror/403.html
 
@@ -6,13 +6,13 @@ RewriteEngine On
 
 # Detectar el idioma del navegador 
 RewriteCond %{HTTP:Accept-Language} ^es [NC] 
-RewriteRule ^$ /204DAWProyectoDAW/es/index.php [L] 
+RewriteRule ^$ /204DAWProyectoDAW/es/indexProyectoTema3.php [L] 
  
 RewriteCond %{HTTP:Accept-Language} ^pt [NC] 
-RewriteRule ^$ /204DAWProyectoDAW/pt/index.html [L] 
+RewriteRule ^$ /204DAWProyectoDAW/pt/indexProyectoTema3.php [L] 
 
 RewriteCond %{HTTP:Accept-Language} ^en [NC] 
-RewriteRule ^$ /204DAWProyectoDAW/en/index.html [L] 
+RewriteRule ^$ /204DAWProyectoDAW/en/indexProyectoTema3.php [L] 
  
 # Redirigir a la página principal si no se encuentra el idioma 
 RewriteRule ^$ /en/index.html [L] 
