@@ -1,0 +1,17 @@
+;
+; BIND data file for local loopback interface
+;
+$TTL	604800
+@	IN	SOA	aas-used.alex.local. alexasesan.educa.jcyl.es. (
+			      1		; Serial
+			 604800		; Refresh
+			  86400		; Retry
+			2419200		; Expire
+			 3600  )	; Negative Cache TTL
+;
+@	IN	NS	aas-used.alex.local.
+@	IN	A	192.168.3.204
+aas-used	IN	A	192.168.3.204
+
+daw201	IN	CNAME	aas-used.alex.local.
+daw204	IN	CNAME	aas-used.alex.local.
